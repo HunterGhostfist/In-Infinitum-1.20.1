@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "in_infinitum",
+	"version": "${version}",
+	"name": "In Infinitum",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"HunterGhostfist"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/in_infinitum/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.hgf.InInfinitum"
+		],
+		"fabric-datagen": [
+			"net.hgf.InInfinitumDataGenerator"
+		],
+		"client": [
+			"net.hgf.InInfinitumClient"
+		]
+	},
+	"mixins": [
+		"in_infinitum.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.20",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
